@@ -1,0 +1,14 @@
+{
+  "name": "wabi-ui",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "pnpm -w run build",
+    "test": "pnpm -w run test"
+  }
+}

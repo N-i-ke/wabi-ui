@@ -1,0 +1,18 @@
+{
+  "name": "@wabi-ui/react",
+  "version": "0.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": {
+    "@wabi-ui/core": "*",
+    "react": "^18.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "clean": "rimraf dist"
+  }
+}
+
+
