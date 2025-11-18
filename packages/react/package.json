@@ -5,6 +5,12 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./src/index.tsx",
+      "require": "./src/index.tsx"
+    }
+  },
   "dependencies": {
     "@wabi-ui/core": "*",
     "react": "^18.0.0"
