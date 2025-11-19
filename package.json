@@ -10,5 +10,9 @@
     "bootstrap": "pnpm install",
     "build": "pnpm -w run build",
     "test": "pnpm -w run test"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3"
   }
 }

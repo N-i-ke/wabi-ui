@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, SecondaryButton, IconButton, GhostButton } from "@wabi-ui/react";
-import { ReactComponent as SampleIcon } from "../../packages/react/src/components/Button/icon-placeholder.svg";
 
 export default function App() {
   return (
