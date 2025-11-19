@@ -1,10 +1,10 @@
 import React from "react";
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+export type PrimitiveButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "secondary";
 };
 
-export const Button: React.FC<ButtonProps> = ({
+export const PrimitiveButton: React.FC<PrimitiveButtonProps> = ({
   children,
   variant = "primary",
   style,
