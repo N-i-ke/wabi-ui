@@ -1,3 +1,3 @@
-export { Button } from "./FirstWabiButton";
+export { Button } from "./FirstWabiButton/FirstWabiButton";
 
 
