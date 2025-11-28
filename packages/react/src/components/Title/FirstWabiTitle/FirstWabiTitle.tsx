@@ -3,13 +3,14 @@ import "./first-wabi-title.css";
 
 export type TitleProps = React.HTMLAttributes<HTMLHeadingElement> & {
   level?: 1 | 2 | 3;
+  text?: string;
 };
 
-export const Title: React.FC<TitleProps> = ({ level = 1, children, ...rest }) => {
+export const Title: React.FC<TitleProps> = ({ level = 2, text = "あしらい", ...rest }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
-    <Tag {...(rest as any)} className="wabi-title">
-      {children}
+    <Tag {...(rest as any)} className="heading">
+      {text}
     </Tag>
   );
 };
