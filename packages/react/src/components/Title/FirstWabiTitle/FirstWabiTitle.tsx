@@ -1,5 +1,5 @@
 import React from "react";
-import "./title.css";
+import "./first-wabi-title.css";
 
 export type TitleProps = React.HTMLAttributes<HTMLHeadingElement> & {
   level?: 1 | 2 | 3;
