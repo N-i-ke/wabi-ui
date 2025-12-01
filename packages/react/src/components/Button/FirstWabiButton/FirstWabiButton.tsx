@@ -6,6 +6,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<any> & {
   as?: React.ElementType;
   icon?: React.ReactNode;
   fancy?: boolean; // apply the decorative CSS when true
+  text?: string;
 };
 
 export const Button: React.FC<ButtonProps> = ({
@@ -13,6 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   icon,
   children,
+  text,
   fancy = true,
   ...rest
 }) => {
@@ -24,7 +26,7 @@ export const Button: React.FC<ButtonProps> = ({
       {fancy ? <div className="button__cloud2" /> : null}
       <div className="button__inner">
         {icon ? <span className="button__icon">{icon}</span> : null}
-        <span className="button__text">{children}</span>
+        <span className="button__text">{children ?? text}</span>
         {fancy ? <div className="button__pattern" /> : null}
       </div>
     </Component>

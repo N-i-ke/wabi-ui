@@ -6,11 +6,11 @@ export type TitleProps = React.HTMLAttributes<HTMLHeadingElement> & {
   text?: string;
 };
 
-export const Title: React.FC<TitleProps> = ({ level = 2, text = "あしらい", ...rest }) => {
+export const Title: React.FC<TitleProps> = ({ level = 2, text = "あしらい", children, ...rest }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
     <Tag {...(rest as any)} className="heading">
-      {text}
+      {children ?? text}
     </Tag>
   );
 };
