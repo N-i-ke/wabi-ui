@@ -1,0 +1,18 @@
+.heading {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #000;
+    &::before,&::after {
+      content: "";
+      height: 1px;
+      flex-grow: 1;
+      background-color: #000;
+    }
+    &::before {
+      margin-right: 1rem;
+    }
+    &::after {
+      margin-left: 1rem;
+    }
+  }

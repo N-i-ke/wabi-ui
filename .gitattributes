@@ -1,0 +1,8 @@
+# Exclude library CSS from GitHub Linguist language statistics
+packages/react/src/components/**/*.css linguist-vendored
+
+# If you also want to exclude example app CSS, uncomment:
+# examples/**/**/*.css linguist-vendored
+# react/**/**/*.css linguist-vendored
+
+
