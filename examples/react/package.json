@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@wabi-ui/react": "^0.0.0",
+    "@wabi-ui/react": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

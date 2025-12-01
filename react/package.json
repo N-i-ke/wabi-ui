@@ -1,5 +1,5 @@
 {
-  "name": "wabi-ui-examples-react",
+  "name": "wabi-ui-local-react",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,7 +8,7 @@
     "preview": "pnpm exec vite preview"
   },
   "dependencies": {
-    "@wabi-ui/react": "*",
+    "@wabi-ui/react": "workspace:*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
